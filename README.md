@@ -1,12 +1,12 @@
 # Projects for Image Processing 
-
+<br>
 ### Homework
 
 **HW1**
 Comparate for loop vs matrix pairwise eucledian distance implementation.
 
 Algorithm:
-
+<br>
  **DUMMY** 
   ```
 
@@ -20,6 +20,7 @@ Algorithm:
           % scalar      |    scalar + scalar + scalar 
           M[i,j] <- dotProduct(rowVectorj, rowVectorj)  + dotProduct(rowVectori, rowVectori ) -2*dotProduct(rowVectorj, rowVectori))  
   ```
+<br>
 **MATRIX**
   
    The matrix implementation uses the following fact sqrt(norm(xi) + norm(xj) - 2dot(xi,xj))
@@ -32,6 +33,7 @@ Algorithm:
 
 
 Results:
+<br>
 <img alt="Runtime_of_eucledianDistDummy_vs_Matrix.png" src="https://github.com/jonss0777/Image-Processing-CSCI367/blob/455a972d1550ef46538ec79f658d61b36e7d91af/Runtime_of_eucledianDistDummy_vs_Matrix.png" width="300" height="250">
 
     
