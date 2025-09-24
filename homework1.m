@@ -42,7 +42,6 @@ for k = 1:length(inputs)
 end
 
 % Plot runtime for eucledianDistDummy
-%subplot(2, 1, 1);
 plot(inputs, times_dummy, '-b', 'LineWidth', 2);
 title('Runtime of eucledianDist Dummy vs Matrix');
 xlabel('Matrix Size (N x D)');
