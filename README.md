@@ -18,16 +18,22 @@ Algorithm:
           rowVectori from X % 1XN vector
 
           % scalar      |    scalar + scalar + scalar 
-          M[i,j] <- dotProduct(rowVectorj, rowVectorj)  + dotProduct(rowVectori, rowVectori ) -2*dotProduct(rowVectorj, rowVectori))  
+          M[i,j] <- dotProduct(rowVectorj, rowVectorj)  + dotProduct(rowVectori, rowVectori ) -2*dotProduct(rowVectorj, rowVectori))
+
+  
   ```
 <br>
 **MATRIX**
+  '''
+
   
    The matrix implementation uses the following fact sqrt(norm(xi) + norm(xj) - 2dot(xi,xj))
   In other words we can square the elements in X and sum them along the rows. The result is a DX1 vector let's call it p . This gets the values for norm(xi) and norm(xj).
   We also need to calculate -2dot(xi,xj) for this I take the dot product of X,X' leaving me with a DXD matrix times -2 , let's call it k.
   By performing p + p' +  k, dimensions of p are DX1, p' 1XD and k DxD, by using + p is implitly expanded to DXD same for p'. Then p + p' + k is really DxD + DxD + DxD.
 
+  
+'''
 <br>
 <br>
 
