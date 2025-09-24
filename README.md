@@ -3,9 +3,11 @@
 ### Homework
 
 **HW1**
-Comparate for loop vs matrix paiewise eucledian distance implementation.
+Comparate for loop vs matrix pairwise eucledian distance implementation.
+
 Algorithm:
-  **DUMMY** 
+
+ **DUMMY** 
   ```
 
   INPUT: X <- NxD
@@ -18,7 +20,7 @@ Algorithm:
           % scalar      |    scalar + scalar + scalar 
           M[i,j] <- dotProduct(rowVectorj, rowVectorj)  + dotProduct(rowVectori, rowVectori ) -2*dotProduct(rowVectorj, rowVectori))  
   ```
-  **MATRIX**
+**MATRIX**
   ```
   % The matrix implementation uses the following fact sqrt(norm(xi) + norm(xj) - 2dot(xi,xj))
   In other words we can square the elements in X and sum them along the rows. The result is a DX1 vector let's call it p . This gets the values for norm(xi) and norm(xj).
