@@ -2,8 +2,9 @@
 
 ### Homework
 
-**HW1**
-Comparate for loop vs matrix pairwise eucledian distance implementation.
+### HW1
+<details>
+<summary> PART1: Comparate for loop vs matrix pairwise eucledian distance implementation.</summary>
 
 Algorithm:
 <br>
@@ -49,6 +50,7 @@ The figure shows how as the number of rows(vectors) increases the time it takes 
 
 By visualizing the run time and exploring the dummy and matrix algorithms it's clear the power vectorization has in speeding the the computation time on matrices. 
 
+</details>
     
 
 
