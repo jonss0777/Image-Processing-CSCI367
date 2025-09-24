@@ -1,5 +1,5 @@
 # Projects for Image Processing 
-<br>
+
 ### Homework
 
 **HW1**
