@@ -1,14 +1,33 @@
 # Projects for Image Processing 
 
 ### Homework
-  - **1**: Comparate for loop vs matrix eucledian distance implementation.
 
+**HW1**
+Comparate for loop vs matrix paiewise eucledian distance implementation.
+Algorithm:
+  **DUMMY** 
+  ```
 
+  INPUT: X <- NxD
+  M <- zeros(NXD) % matrix
+  Iterate i: 1 to N
+      Iterate j:1 to D
+          rowVectorj from X % 1XN vector
+          rowVectori from X % 1XN vector
 
-    Algorithm:
+          % scalar      |    scalar + scalar + scalar 
+          M[i,j] <- dotProduct(rowVectorj, rowVectorj)  + dotProduct(rowVectori, rowVectori ) -2*dotProduct(rowVectorj, rowVectori))  
+  ```
+  **MATRIX**
+  ```
+  % The matrix implementation uses the following fact sqrt(norm(xi) + norm(xj) - 2dot(xi,xj))
+  In other words we can square the elements in X and sum them along the rows. The result is a DX1 vector let's call it p . This gets the values for norm(xi) and norm(xj).
+  We also need to calculate -2dot(xi,xj) for this I take the dot product of X,X' leaving me with a DXD vector times -2 scalar, let's call it k.
+  By performing p + p' +  k, dimensions of p are DX1, p' 1XD and k DxD, by using + p is implitly expanded to DXD same for p'. Then p + p' + k is really DxD + DxD + DxD.
+  ```
 
-    Results:
-    <img alt="Runtime_of_eucledianDistDummy_vs_Matrix.png" src="https://github.com/jonss0777/Image-Processing-CSCI367/blob/455a972d1550ef46538ec79f658d61b36e7d91af/Runtime_of_eucledianDistDummy_vs_Matrix.png" width="300" height="250">
+Results:
+<img alt="Runtime_of_eucledianDistDummy_vs_Matrix.png" src="https://github.com/jonss0777/Image-Processing-CSCI367/blob/455a972d1550ef46538ec79f658d61b36e7d91af/Runtime_of_eucledianDistDummy_vs_Matrix.png" width="300" height="250">
 
     
 
