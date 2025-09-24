@@ -41,14 +41,17 @@ for k = 1:length(inputs)
     times_matrix(k) = toc;  % Store elapsed time
 end
 
+figure;
 % Plot runtime for eucledianDistDummy
 plot(inputs, times_dummy, '-b', 'LineWidth', 2);
+hold on
+plot(inputs, times_matrix, '-r', 'LineWidth', 2);
 title('Runtime of eucledianDist Dummy vs Matrix');
 xlabel('Matrix Size (N x D)');
 ylabel('Time (seconds)');
-hold on
+
 % Plot runtime for eucledianDistMatrix
-subplot(2, 1, 2);
-plot(inputs, times_matrix, '-r', 'LineWidth', 2);
+legend('show');  % Display the legend
+grid on;
+
 saveas(gcf, "Runtime of eucledianDistDummy_vs_Matrix.png")
-hold off
