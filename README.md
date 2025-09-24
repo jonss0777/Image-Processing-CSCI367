@@ -47,7 +47,7 @@ Results:
 
 The figure shows how as the number of rows(vectors) increases the time it takes the dummy(for loop approach) to compute the eucledian distance increases after 400 rows the difference in execution time between the dummy and the matrix algorithm is cosiderably large, and this trend continues as the number of rows increases. 
 
-By visualizing the run time and exploring the dummy and matrix algorithms it's clear the power vectorization has in speeding the the computation time between matrices. 
+By visualizing the run time and exploring the dummy and matrix algorithms it's clear the power vectorization has in speeding the the computation time on matrices. 
 
     
 
