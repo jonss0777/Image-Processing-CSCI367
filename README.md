@@ -24,7 +24,7 @@ Algorithm:
   ```
 <br>
 **MATRIX**
-  '''
+```
 
   
    The matrix implementation uses the following fact sqrt(norm(xi) + norm(xj) - 2dot(xi,xj))
@@ -33,7 +33,7 @@ Algorithm:
   By performing p + p' +  k, dimensions of p are DX1, p' 1XD and k DxD, by using + p is implitly expanded to DXD same for p'. Then p + p' + k is really DxD + DxD + DxD.
 
   
-'''
+```
 <br>
 <br>
 
