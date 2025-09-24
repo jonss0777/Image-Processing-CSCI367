@@ -3,7 +3,7 @@
 ### Homework
 
 ### HW1
-<details>
+<details open >
 <summary> PART1: Comparate for loop vs matrix pairwise eucledian distance implementation.</summary>
 
 Algorithm:
