@@ -51,7 +51,7 @@ xlabel('Matrix Size (N x D)');
 ylabel('Time (seconds)');
 
 % Plot runtime for eucledianDistMatrix
-legend('show');  % Display the legend
+legend('Dummy','Matrix'); 
 grid on;
 
 saveas(gcf, "Runtime of eucledianDistDummy_vs_Matrix.png")
