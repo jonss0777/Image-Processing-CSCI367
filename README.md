@@ -45,7 +45,7 @@ Results:
 <img alt="Runtime_of_eucledianDistDummy_vs_Matrix.png" src="https://github.com/jonss0777/Image-Processing-CSCI367/blob/455a972d1550ef46538ec79f658d61b36e7d91af/Runtime_of_eucledianDistDummy_vs_Matrix.png" width="600" height="550">
 <br>
 
-The figure shows how as the number of rows(vectors) increases the time it take to compute the eucledian distance increases after 400 rows the difference in execution time cosiderably significant, and this trend continues as the number of rows increases. 
+The figure shows how as the number of rows(vectors) increases the time it takes to compute the eucledian distance increases after 400 rows the difference in execution time is cosiderably large, and this trend continues as the number of rows increases. 
 
 
     
